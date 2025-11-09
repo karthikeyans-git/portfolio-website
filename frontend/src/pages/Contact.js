@@ -20,11 +20,9 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // In a real app, you'd send this to your backend
         console.log('Form submitted:', formData);
         setSubmitted(true);
-        
-        // Reset form after 3 seconds
+
         setTimeout(() => {
             setFormData({ name: '', email: '', subject: '', message: '' });
             setSubmitted(false);
@@ -66,16 +64,17 @@ function Contact() {
                         </div>
                     </div>
 
-                //    <div className="social-links">
+                    {/* Social Links */}
+                    <div className="social-links">
                         <h3>Connect With Me</h3>
                         <div className="social-icons">
-                           // <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <span>🐙</span> GitHub
-                          //  </a>
-                            //<a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            </a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <span>💼</span> LinkedIn
                             </a>
-                           // <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <span>🐦</span> Twitter
                             </a>
                         </div>
